@@ -277,9 +277,9 @@ html_template = f'''<!DOCTYPE html>
             <p>Placement Offset은 언뜻 불량과 상관이 높아 보이지만, 장비별 층화 분석 시 효과가 사라지는 전형적인 <span data-tooltip="대리 변수 — 직접 측정하기 어려운 요인(EQ_B 문제)을 간접적으로 나타내는 변수(Offset)">Proxy Variable</span>입니다.</p>
             <div class="mermaid">
             graph LR
-                EQ_B["Equipment B (진짜 원인)"] --> Offset["Placement Offset"]
+                EQ_B["Equipment B (Root Cause)"] --> Offset["Placement Offset"]
                 EQ_B --> Crack["Crack Defect"]
-                Offset -.->|Confounded (허위 상관)| Crack
+                Offset -.->|Fake Correlation| Crack
             </div>
             <div class="img-container"><img src="{fig_confound}" onclick="zoomImg(this)" alt="교란 효과 검증"></div>
             
