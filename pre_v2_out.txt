@@ -1,0 +1,52 @@
+﻿=== [v2] Die Attach ?꾩쿂由????⑤윭?ㅼ엫 ?꾪솚 諛섏쁺 ===
+
+[1] ?ㅽ궎留?諛?湲곕낯 ?뺣낫
+  Rows: 20,000  |  Cols: 7
+  DA_Equipment: str
+  DA_Head: str
+  DA_Epoxy_Batch: str
+  DA_Placement_Offset_um: float64
+  DA_Bonding_Pressure_N: float64
+  DA_Head_Speed_mm_s: float64
+  DA_Crack_Defect: int64
+
+[2] 寃곗륫移?/ 以묐났
+  寃곗륫移??⑷퀎: 0
+  以묐났 ?? 0
+
+[3] ?λ퉬蹂?遺덈웾瑜?/ DPMO / Z-bench (??怨듭젙 ?λ젰 吏??
+  EQ_A  N=6,427  遺덈웾=1,366 (21.25%)  DPMO=212,541  Z-bench=0.798
+  EQ_B  N=6,067  遺덈웾=3,027 (49.89%)  DPMO=498,929  Z-bench=0.003
+  EQ_C  N=7,506  遺덈웾=2,378 (31.68%)  DPMO=316,813  Z-bench=0.477
+
+[4] ?섏튂??蹂??湲곗큹 ?듦퀎 (?꾩껜)
+  [DA_Placement_Offset_um]  mean=11.31  std=12.04  min=0.50  max=60.00  ?꾩껜IQR?댁긽移?1913嫄?9.6%)
+  [DA_Bonding_Pressure_N]  mean=63.85  std=10.81  min=30.00  max=100.00  ?꾩껜IQR?댁긽移?137嫄?0.7%)
+  [DA_Head_Speed_mm_s]  mean=51.21  std=3.54  min=36.17  max=65.30  ?꾩껜IQR?댁긽移?130嫄?0.7%)
+
+[5] ?λ퉬蹂?痢듯솕 IQR ?댁긽移??ы깘吏 (?섏젙 ?듭떖)
+  [DA_Placement_Offset_um]
+    EQ_A: IQR踰붿쐞 [-4.41 ~ 15.27]  ?댁긽移?230嫄?3.58%)
+    EQ_B: IQR踰붿쐞 [-18.563 ~ 62.578]  ?댁긽移?0嫄?0.0%)
+    EQ_C: IQR踰붿쐞 [-4.935 ~ 15.985]  ?댁긽移?223嫄?2.97%)
+  [DA_Bonding_Pressure_N]
+    EQ_A: IQR踰붿쐞 [34.698 ~ 93.358]  ?댁긽移?42嫄?0.65%)
+    EQ_B: IQR踰붿쐞 [34.438 ~ 93.097]  ?댁긽移?40嫄?0.66%)
+    EQ_C: IQR踰붿쐞 [34.75 ~ 93.07]  ?댁긽移?57嫄?0.76%)
+  [DA_Head_Speed_mm_s]
+    EQ_A: IQR踰붿쐞 [41.645 ~ 60.805]  ?댁긽移?37嫄?0.58%)
+    EQ_B: IQR踰붿쐞 [41.715 ~ 60.715]  ?댁긽移?55嫄?0.91%)
+    EQ_C: IQR踰붿쐞 [41.505 ~ 60.905]  ?댁긽移?45嫄?0.6%)
+
+  ??DA_Placement_Offset_um ?ы빐??
+    ?꾩껜 IQR 湲곗? ?댁긽移?9.56% ???λ퉬蹂?痢듯솕 ??媛??λ퉬 ?댁뿉?쒕뒗 ?뺤긽 遺꾪룷
+    EQ_B??Offset 遺꾪룷 ?먯껜媛 ? ?λ퉬蹂대떎 ?믪? 蹂꾧컻 紐⑥쭛??
+    ??EQ_B ?由?吏??Proxy)?댁? ?낅┰???먯씤 蹂???꾨떂
+
+[6] 踰붿＜???붿씤 遺덈웾瑜?(?먯씤 諛곗젣 ?뺤씤)
+  [DA_Head]  Head_1: 34.09%  |  Head_2: 33.71%  ??李⑥씠 0.37%p  ???먯씤 諛곗젣
+  [DA_Epoxy_Batch]  Batch_A: 33.89%  |  Batch_B: 33.82%  ??李⑥씠 0.07%p  ???먯씤 諛곗젣
+
+  ??da_preprocess_result.json ????꾨즺
+
+=== ?꾩쿂由?v2 ?꾨즺 ===

@@ -1,0 +1,86 @@
+{
+  "num_effects_cohens_d": {
+    "DA_Bonding_Pressure_N": {
+      "cohens_d": 0.3392,
+      "mean_normal": 62.623,
+      "mean_defect": 66.243,
+      "interpretation": "소(small)"
+    },
+    "DA_Head_Speed_mm_s": {
+      "cohens_d": -0.2138,
+      "mean_normal": 51.464,
+      "mean_defect": 50.711,
+      "interpretation": "소(small)"
+    },
+    "DA_Placement_Offset_um": {
+      "cohens_d": 0.3166,
+      "mean_normal": 10.031,
+      "mean_defect": 13.801,
+      "interpretation": "소(small)"
+    }
+  },
+  "cat_effects_OR": {
+    "DA_Equipment": {
+      "EQ_A": {
+        "OR": 1.0,
+        "CI_low": 1.0,
+        "CI_high": 1.0,
+        "defect_rate": 21.25,
+        "ARD_ppt": 0.0
+      },
+      "EQ_B": {
+        "OR": 3.69,
+        "CI_low": 3.41,
+        "CI_high": 3.99,
+        "defect_rate": 49.89,
+        "ARD_ppt": 28.64
+      },
+      "EQ_C": {
+        "OR": 1.72,
+        "CI_low": 1.59,
+        "CI_high": 1.86,
+        "defect_rate": 31.68,
+        "ARD_ppt": 10.43
+      }
+    },
+    "DA_Head": {
+      "Head_1": {
+        "OR": 1.0,
+        "CI_low": 1.0,
+        "CI_high": 1.0,
+        "defect_rate": 34.09,
+        "ARD_ppt": 0.0
+      },
+      "Head_2": {
+        "OR": 0.98,
+        "CI_low": 0.93,
+        "CI_high": 1.04,
+        "defect_rate": 33.71,
+        "ARD_ppt": -0.37
+      }
+    },
+    "DA_Epoxy_Batch": {
+      "Batch_A": {
+        "OR": 1.0,
+        "CI_low": 1.0,
+        "CI_high": 1.0,
+        "defect_rate": 33.89,
+        "ARD_ppt": 0.0
+      },
+      "Batch_B": {
+        "OR": 1.0,
+        "CI_low": 0.94,
+        "CI_high": 1.06,
+        "defect_rate": 33.82,
+        "ARD_ppt": -0.07
+      }
+    }
+  },
+  "confounding_verdict": {
+    "DA_Placement_Offset_um": "PROXY — EQ_B 대리 지표, 원인 제거",
+    "DA_Equipment_EQB": "PRIMARY CAUSE — OR≈3.9 지배 인자",
+    "DA_Bonding_Pressure_N": "CAUSAL CANDIDATE — 장비 층화 후 방향 유지",
+    "DA_Head": "EXCLUDED",
+    "DA_Epoxy_Batch": "EXCLUDED"
+  }
+}

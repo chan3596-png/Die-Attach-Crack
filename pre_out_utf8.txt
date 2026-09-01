@@ -1,0 +1,49 @@
+﻿Loading data from iii_die attatch/20000_BGTTV.xlsx, sheet: ?듯빀_遺덈웾?곗씠??20000...
+
+[1] ?곗씠???ㅽ궎留?諛?湲곕낯 ?뺣낫
+Total Rows: 20000
+Columns & Dtypes:
+ - Lot_ID: str
+ - WF_ID: str
+ - DA_Equipment: str
+ - DA_Head: str
+ - DA_Epoxy_Batch: str
+ - DA_Placement_Offset_um: float64
+ - DA_Bonding_Pressure_N: float64
+ - DA_Head_Speed_mm_s: float64
+ - DA_Crack_Defect: int64
+
+[2] 寃곗륫移?諛?以묐났媛??뺤씤
+Missing Values:
+ - No missing values detected.
+Duplicate Rows (based on Lot_ID, WF_ID): 0
+
+[3] ?섏튂??蹂???듦퀎 ?붿빟 諛??댁긽移?IQR 湲곗?) ?먯?
+--- DA_Placement_Offset_um ---
+ Mean: 11.307 / Std: 12.042
+ Min:  0.500 / Max: 60.000
+ Outliers(IQR): 1913 (9.56%)
+--- DA_Bonding_Pressure_N ---
+ Mean: 63.849 / Std: 10.807
+ Min:  30.000 / Max: 100.000
+ Outliers(IQR): 137 (0.69%)
+--- DA_Head_Speed_mm_s ---
+ Mean: 51.209 / Std: 3.541
+ Min:  36.170 / Max: 65.300
+ Outliers(IQR): 130 (0.65%)
+
+[4] 踰붿＜??蹂???몄쨷(Skewness) 諛?怨좎쑀媛?寃??
+--- DA_Equipment (Unique: 3) ---
+ EQ_C: 7506 (37.53%)
+ EQ_A: 6427 (32.14%)
+ EQ_B: 6067 (30.34%)
+--- DA_Head (Unique: 2) ---
+ Head_2: 12434 (62.17%)
+ Head_1: 7566 (37.83%)
+--- DA_Epoxy_Batch (Unique: 2) ---
+ Batch_B: 10423 (52.12%)
+ Batch_A: 9577 (47.88%)
+
+[5] 醫낆냽 蹂??Target) 遺꾪룷
+ DA_Crack_Defect=0: 13229 (66.14%)
+ DA_Crack_Defect=1: 6771 (33.86%)

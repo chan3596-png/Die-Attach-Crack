@@ -1,0 +1,110 @@
+{
+  "n_total": 20000,
+  "overall_defect_rate": 33.86,
+  "equipment_stats": [
+    {
+      "Equipment": "EQ_A",
+      "N": 6427,
+      "Defects": 1366,
+      "Defect_Rate_pct": 21.25,
+      "DPMO": 212540,
+      "Z_bench": 0.798
+    },
+    {
+      "Equipment": "EQ_B",
+      "N": 6067,
+      "Defects": 3027,
+      "Defect_Rate_pct": 49.89,
+      "DPMO": 498928,
+      "Z_bench": 0.003
+    },
+    {
+      "Equipment": "EQ_C",
+      "N": 7506,
+      "Defects": 2378,
+      "Defect_Rate_pct": 31.68,
+      "DPMO": 316813,
+      "Z_bench": 0.477
+    }
+  ],
+  "outlier_by_equipment": {
+    "DA_Placement_Offset_um": {
+      "EQ_A": {
+        "Q1": 2.97,
+        "Q3": 7.89,
+        "IQR_lower": -4.41,
+        "IQR_upper": 15.27,
+        "outlier_count": 230,
+        "outlier_pct": 3.58
+      },
+      "EQ_B": {
+        "Q1": 11.865,
+        "Q3": 32.15,
+        "IQR_lower": -18.563,
+        "IQR_upper": 62.578,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "EQ_C": {
+        "Q1": 2.91,
+        "Q3": 8.14,
+        "IQR_lower": -4.935,
+        "IQR_upper": 15.985,
+        "outlier_count": 223,
+        "outlier_pct": 2.97
+      }
+    },
+    "DA_Bonding_Pressure_N": {
+      "EQ_A": {
+        "Q1": 56.695,
+        "Q3": 71.36,
+        "IQR_lower": 34.698,
+        "IQR_upper": 93.358,
+        "outlier_count": 42,
+        "outlier_pct": 0.65
+      },
+      "EQ_B": {
+        "Q1": 56.435,
+        "Q3": 71.1,
+        "IQR_lower": 34.438,
+        "IQR_upper": 93.097,
+        "outlier_count": 40,
+        "outlier_pct": 0.66
+      },
+      "EQ_C": {
+        "Q1": 56.62,
+        "Q3": 71.2,
+        "IQR_lower": 34.75,
+        "IQR_upper": 93.07,
+        "outlier_count": 57,
+        "outlier_pct": 0.76
+      }
+    },
+    "DA_Head_Speed_mm_s": {
+      "EQ_A": {
+        "Q1": 48.83,
+        "Q3": 53.62,
+        "IQR_lower": 41.645,
+        "IQR_upper": 60.805,
+        "outlier_count": 37,
+        "outlier_pct": 0.58
+      },
+      "EQ_B": {
+        "Q1": 48.84,
+        "Q3": 53.59,
+        "IQR_lower": 41.715,
+        "IQR_upper": 60.715,
+        "outlier_count": 55,
+        "outlier_pct": 0.91
+      },
+      "EQ_C": {
+        "Q1": 48.78,
+        "Q3": 53.63,
+        "IQR_lower": 41.505,
+        "IQR_upper": 60.905,
+        "outlier_count": 45,
+        "outlier_pct": 0.6
+      }
+    }
+  }
+}
