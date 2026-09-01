@@ -145,10 +145,10 @@
             <h2>4. 교란 변수 (Confounding) 검증: Placement Offset</h2>
             <div class="mermaid">
             graph LR
-                EQ_B["EQ_B 하드웨어 결함 (Collet 마모 등)"] --> Offset["Placement Offset 증가"]
-                EQ_B --> Force["국부적 힘 불균일"]
-                Force --> Crack["Crack Defect (불량 발생)"]
-                Offset -.->|가짜 상관관계 (Fake Correlation)| Crack
+                EQ_B["Equipment B Hardware Defect"] --> Offset["Placement Offset"]
+                EQ_B --> Force["Force Imbalance"]
+                Force --> Crack["Crack Defect"]
+                Offset -.->|Fake Correlation| Crack
             </div>
             <div class="insight-box">
                 <h4>공정 메커니즘 및 칩 오프셋 타겟</h4>
