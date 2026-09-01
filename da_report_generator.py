@@ -68,7 +68,7 @@ fig_dpmo = fig_to_base64(fig1)
 # 2. fig_pressure_box
 fig2, ax = plt.subplots(figsize=(8,5))
 df['Defect_Status'] = df[target_col].map({0: 'OK', 1: 'NG'})
-sns.boxplot(x='DA_Equipment', y='DA_Bonding_Pressure_N', hue='Defect_Status', data=df, ax=ax, palette={'OK':'#66c2a5', 'NG':'#fc8d62'}, order=['EQ_A', 'EQ_B', 'EQ_C'])
+sns.boxplot(x='DA_Equipment', y='DA_Bonding_Pressure_N', hue='Defect_Status', data=df, ax=ax, palette={'OK':'#66c2a5', 'NG':'#fc8d62'}, order=['EQ_A', 'EQ_B', 'EQ_C'], width=0.5, gap=0.15)
 ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 ax.set_title('Bonding Pressure by Equipment & Defect')
 fig_pressure_box = fig_to_base64(fig2)
